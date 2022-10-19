@@ -149,7 +149,7 @@ console.log(n_elevator_2);*/
 let itself=numbers.map(([x,y])=>x*y);
 console.log(itself);*/
 //DOM2
-$("#btn2").addEventListener("click", function () {
+/**$("#btn2").addEventListener("click", function () {
     var input = document.createElement("input");
     input.setAttribute("type","email");
     input.setAttribute("placeholder","E-mail");
@@ -184,3 +184,73 @@ function bind_close(){
         });
     }
 }
+**/
+//SORT
+/**let testArray = [10,2,4,5,3,7];
+testArray.sort();
+console.log(testArray);
+
+testArray.sort()
+
+function sortNumber(a,b){
+    return a-b;
+}
+console.log(testArray.sort(sortNumber));**/
+
+/**REVERSE
+var testArray = [10,1,2,3,4];
+testArray.reverse();
+console.log(testArray);**/
+//SPLIT
+/** 
+var testString = "a,b,c,d,e,2,3,44,43";
+var testArray = testString.split(",");
+console.log(testArray);
+**/
+//JOIN
+/** 
+var testString="a,b,c,2,3";
+var testArray=testString.split(",");
+var testJoin = testArray.join(".");
+console.log(testJoin);
+*/
+//FILTER
+/**
+var testArray=[10,2,3,5,9];
+var pairnumber = testArray.filter((num)=>{
+    return num % 2 === 0;
+})
+console.log(pairnumber);
+*/
+//MAP
+/**
+var testArray=[1,2,3,4,5,6];
+var testArray2 = testArray.map(function(num){
+    return num*num;
+});
+console.log(testArray2);
+*/
+//Callbacks
+/**setTimeout(function(){
+    console.log("Hello ");
+
+}, 2500);
+*/
+//JSON
+/**var course = {
+    title: "Course JS Advanced",
+    section: 4,
+    subsection: 6,
+    teacher: "Javier Prada",
+    intro: function(){
+        console.log("as"+this.title+"sa"+this.section+"as");
+        this.function2();
+    },
+    function2: function(){
+        console.log("2f");
+    }
+}
+console.log(course["teacher"]);
+console.log(course.title);
+console.log(course.intro());
+*/
