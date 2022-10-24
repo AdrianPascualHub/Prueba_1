@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body onunload="myFunction()">
-
-<h1>Welcome to my Home Page</h1>
-
-<p>Close this window or press F5 to reload the page.</p>
-<p><strong>Note:</strong> Due to different browser settings, this event may not always work as expected.</p>
-
-<script>
-function myFunction() {
-  alert("Thank you for visiting W3Schools!");
-}
-</script>
-
+<head>
+    <style>div {width: 200px;height: 100px;border: 1px solid black;}</style>
+</head>
+<body>
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+    <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+    <p id="demo"></p>
+    <script>
+        function myFunction(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            var coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor;
+        }
+        function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
 </body>
 </html>

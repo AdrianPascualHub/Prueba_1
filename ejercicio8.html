@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>div {width: 200px;height: 100px;border: 1px solid black;}</style>
+</head>
+<body>
+    <a id="mienlace" href="pagina.html" onClick="alertar(this)">Pulsa aqui</a>
+    <script type="text/javascript">
+        function alertar(objeto) {
+            alert("Te conectaremos con la página: " + objeto.href);
+        }
+    </script> 
+    Su equivalente en el <strong>modelo tradicional</strong> sería:
+    <a id="mienlace2" href="pagina.html">Pulsa aqui</a>
+    <script type="text/javascript">
+        document.getElementById("mienlace2").onclick = alertar;
+        function alertar() {
+            alert("Te conectaremos con la página: " + this.href);
+        }
+    </script>
+</body>
+
+</html>
